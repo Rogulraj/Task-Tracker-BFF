@@ -51,10 +51,10 @@ The application follows the MVC (Model-View-Controller) pattern in the backend f
 To run the backend locally, follow these steps:
 
 1. Clone this repository.
-2. Navigate to the backend directory.
+2. Navigate to the directory.
 3. Install dependencies using `npm install`.
 4. Set up environment variables if necessary.
-5. Run the backend server using `npm start`.
+5. Run the backend server using `npm start` or `npm run dev`.
 
 ## Contributing
 
