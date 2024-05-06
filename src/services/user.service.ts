@@ -1,3 +1,4 @@
+import { JWT_SECRET_KEY } from "@/config";
 import { HttpException } from "@/exception/HttpException";
 import {
   CommonResponse,
@@ -44,7 +45,7 @@ export class UserService {
 
     const expiresIn = 60 * 60;
 
-    const jwt = sign(tokenPayload, "jwt", { expiresIn: expiresIn });
+    const jwt = sign(tokenPayload, JWT_SECRET_KEY, { expiresIn: expiresIn });
 
     return {
       statusCode: 200,
